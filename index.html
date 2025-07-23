@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate store</title>
+    <!--Icon fonts from cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--linking Swiper feature to css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">🍫ChocoShop-luxury chocolate store</h2>
+            </a>
+            <!--the sign in greeting and logout icon-->
+        <span id="nav-greeting" class="nav-greeting hidden">
+            Hey! <strong id="username-display"></strong>, have a chocotastic day, enjoy our memebers-only discount!
+            <button id="logout-button" class="logout-button" title="Log out">
+            <i class="fa-solid fa-door-open"></i>
+            </button>
+        </span>
+
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Product list</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+    <!--Main content(hero) section-->
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title"> Gourmet Chocolates</h2>
+                    <h3 class="subtitle">Make your day great with our luxury Chocolate!</h3>
+                    <p class="description">Welcome to our online chocolate platform, where every cocoa bean tells a story and every piece of chocolate creates memories.</p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Sign In</a>
+                </div>
+            </div>
+                <div class="hero-image-wrapper">
+                    <img src="image/chocolate-bar.png" alt="Hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!--About section-->
+        <section class="about-section" id="about">
+        <div class="section-content">
+            <div class="about-image-wrapper">
+                <img src= "image/about-image.jpg" alt="about" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About</h2>
+                    <p class="text">At gourmet chocolates, we invite you try our excellent treats, only crafted with premium ingredients and prepared by our top chocolatiers in a homemade environment. Our products are sure to meet every choco-lovers expectations and brighten the mood. We aim to be the best online chocolate selling platform in europe!, so order now and receive a delicacy to spoil yourself, or simply make someones day!</p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i> </a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x"></i> </a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product list section-->
+        <section class="product-section" id="products">
+            <h2 class="section-title">Our Selection</h2>
+            <div class="section-content">
+                <ul class="product-options">
+                    <li class="product-item">
+                        <img src="image/spicy-chocolate.png" alt="spicy chocolate" class="product-image">
+                        <h3 class="name">Spicy chocolate</h3>
+                        <p class="text">Chocolate to make your taste buds tingle and keep the fire alive in you</p>
+                        <button class="add-to-cart" data-name="Spicy chocolate">Add to Cart</button>
+                    </li>
+                    <li class="product-item">
+                        <img src="image/gummy-chocolate.png" alt="gummy chocolate" class="product-image">
+                        <h3 class="name">Gummy chocolate</h3>
+                        <p class="text">For all our slow chewers wanting to savor to flavor!</p>
+                        <button class="add-to-cart" data-name="gummy chocolate chocolate">Add to Cart</button>
+                    </li>
+                    <li class="product-item">
+                        <img src="image/nutty-chocolate.png" alt="nutty chocolate" class="product-image">
+                        <h3 class="name">Nutty chocolate</h3>
+                        <p class="text">Go nuts over our nutty-infused chocolates with 5 different nuts included</p>
+                        <button class="add-to-cart" data-name="Nutty chocolate">Add to Cart</button>
+                    </li>
+                    <li class="product-item">
+                        <img src="image/rainbow-chocolate.png" alt="rainbow chocolate" class="product-image">
+                        <h3 class="name">rainbow chocolate</h3>
+                        <p class="text">Especially for the kids who enjoy the colors of a rainbow, with a tasty of milky-goodness</p>
+                        <button class="add-to-cart" data-name="rainbow chocolate">Add to Cart</button>
+                    </li>
+                    <li class="product-item">
+                        <img src="image/romantic-chocolate.png" alt="romantic chocolate" class="product-image">
+                        <h3 class="name">Romantic-Dark chocolate</h3>
+                        <p class="text">A gift for that special someone with intimate taste of our dark chocolate delights </p>
+                        <button class="add-to-cart" data-name="Romantic chocolate">Add to Cart</button>
+                    </li>
+                    <li class="product-item">
+                        <img src="image/vegan-chocolate.png" alt="vegan chocolate" class="product-image">
+                        <h3 class="name">Vegan chocolate</h3>
+                        <p class="text">introducing our brand environmentally-friendly chocolate!, free of all animal products</p>
+                        <button class="add-to-cart" data-name="Vegan chocolate">Add to Cart</button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <!--Review section-->
+        <section class="review-section" id="reviews">
+            <h2 class="section-title">Top-star Reviews</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="reviews-list swiper-wrapper">
+                            <li class="reviews swiper-slide">
+                                <img src="image/user-1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Jane benet</h3>
+                                <i class="feedback">Loved the gummy chocolate, packed full of my favorite gummy sweets and has the right balance of gummy and crunchy!</i>
+                            </li>
+                            <li class="reviews swiper-slide">
+                                <img src="image/user-2.jpg" alt="User" class="user-image">
+                                <h3 class="name">Ben Wulf</h3>
+                                <i class="feedback">The spicy chocolate is my absolute favorite! and it is not too hot that it burns off your tongue</i>
+                            </li>
+                            <li class="reviews swiper-slide">
+                                <img src="image/user-3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Lyon Heirhardt</h3>
+                                <i class="feedback">The romantic dark chocolate was a perfect gift for my husband, we could not get enough of it, if only we order a box of them! </i>
+                            </li>
+                            <li class="reviews swiper-slide">
+                                <img src="image/user-4.jpg" alt="User" class="user-image">
+                                <h3 class="name">Hope Singy</h3>
+                                <i class="feedback">My family cannot get enough of the Rainbow chocolate, its just that addicting, yet healthy, we will definitely be ordering more, I personally loved the nutty-chocolate as it contains pistachios</i>
+                            </li>
+                            <li class="reviews swiper-slide">
+                                <img src="image/user-5.jpg" alt="User" class="user-image">
+                                <h3 class="name">Mimi Sagebroe</h3>
+                                <i class="feedback">The vegan chocolate is a must try, it just tastes like normal chocolate, but I see it is completely free of any animal products, im so glad to discovered this platform.</i>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<!-- add to cart box! -->
+<div id="cart" class="cart-box">
+    <button id="close-cart" class="cart-close" title="Close Cart">✖</button>
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <button id="clear-cart" style="margin-top: 10px;">
+        <i class="fa-solid fa-trash"></i>
+    </button>
+</div>
+
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+<!--sign in popup modal-->
+<div id="auth-modal" class="modal hidden">
+<div class="modal-content">
+    <span id="close-auth" class="close">&times;</span>
+    <h2 id="auth-title">Sign In</h2>
+    <form id="auth-form">
+    <input type="text" id="name" placeholder="Name" required class="auth-field" />
+    <input type="password" id="password" placeholder="Password" required class="auth-field" />
+    <button type="submit" id="auth-submit">Sign In</button>
+    <p id="toggle-auth-mode">Don’t have an account? <a href="#" id="switch-to-signup">Sign Up</a></p>
+    </form>
+</div>
+</div>
+
+</body>
+</html>
