@@ -76,9 +76,10 @@ app.post('/api/signup', async (req, res) => {
     }
 });
 
-app.post('/api/login', async (req, res) => {
-    try {
-        const { name, password } = req.body;
+        // Login endpoint
+        app.post('/api/login', async (req, res) => {
+            try {
+                const { name, password } = req.body;
 
         // Input validation
         if (typeof name !== 'string' || typeof password !== 'string' || !name.trim() || !password.trim()) {
